@@ -8,8 +8,14 @@
 </head>
 <body>
 <main>
-    <header>
+    <header class="page-header">
         <h1>Car Manufacturers</h1>
+        <div class="filter-control">
+            <label for="country-filter">Filter by country</label>
+            <select id="country-filter" name="country-filter">
+                <option value="all">All countries</option>
+            </select>
+        </div>
     </header>
 
     <section class="scroll-panel">
@@ -20,12 +26,31 @@
             <a href="#section-d">D</a>
             <a href="#section-f">F</a>
             <a href="#section-g">G</a>
+            <a href="#section-g">H</a>
+            <a href="#section-g">I</a>
+            <a href="#section-g">J</a>
+            <a href="#section-g">K</a>
+            <a href="#section-g">L</a>
+            <a href="#section-g">M</a>
+            <a href="#section-g">N</a>
+            <a href="#section-g">O</a>
+            <a href="#section-g">P</a>
+            <a href="#section-g">Q</a>
+            <a href="#section-g">R</a>
+            <a href="#section-g">S</a>
+            <a href="#section-t">T</a>
+            <a href="#section-u">U</a>
+            <a href="#section-v">V</a>
+            <a href="#section-w">W</a>
+            <a href="#section-x">X</a>
+            <a href="#section-y">Y</a>
+            <a href="#section-z">Z</a>
         </nav>
 
         <div id="section-a" class="brand-section">
             <h2>A</h2>
             <div class="brand-grid">
-                <article class="brand-card" data-brand="Acura">
+                <article class="brand-card" data-brand="Acura" data-country="USA, Japan">
                     <div class="brand-logo">
                         <img src="images/acura-logo.png" alt="Acura logo">
                     </div>
@@ -36,7 +61,7 @@
                         <p>Parent Company: <span>Honda</span></p>
                     </div>
                 </article>
-                <article class="brand-card" data-brand="Alfa Romeo">
+                <article class="brand-card" data-brand="Alfa Romeo" data-country="Italy">
                     <div class="brand-logo">
                         <img src="images/alfa-romeo-logo.png" alt="Alfa Romeo logo">
                     </div>
@@ -47,7 +72,7 @@
                         <p>Parent Company: <span>FCA</span></p>
                     </div>
                 </article>
-                <article class="brand-card" data-brand="Aston Martin">
+                <article class="brand-card" data-brand="Aston Martin" data-country="UK">
                     <div class="brand-logo">
                         <img src="images/aston-martin-logo.png" alt="Aston Martin logo">
                     </div>
@@ -58,7 +83,7 @@
                         <p>Parent Company: <span>Independent</span></p>
                     </div>
                 </article>
-                <article class="brand-card" data-brand="Audi">
+                <article class="brand-card" data-brand="Audi" data-country="Germany">
                     <div class="brand-logo">
                         <img src="images/audi-logo.png" alt="Audi logo">
                     </div>
@@ -75,7 +100,7 @@
         <div id="section-b" class="brand-section">
             <h2>B</h2>
             <div class="brand-grid">
-                <article class="brand-card" data-brand="Bentley">
+                <article class="brand-card" data-brand="Bentley" data-country="UK">
                     <div class="brand-logo">
                         <img src="images/bentley-logo.png" alt="Bentley logo">
                     </div>
@@ -86,18 +111,133 @@
                         <p>Parent Company: <span>Volkswagen</span></p>
                     </div>
                 </article>
+                <article class="brand-card" data-brand="BMW" data-country="Germany">
+                    <div class="brand-logo">
+                        <img src="images/bmw-logo.png" alt="BMW logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>BMW</h3>
+                        <p>Founded: <span>1917, Munich, Germany</span></p>
+                        <p>Headquarters: <span>Germany</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Bugatti" data-country="France">
+                    <div class="brand-logo">
+                        <img src="images/bugatti-logo.png" alt="Bugatti logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>BUGATTI</h3>
+                        <p>Founded: <span>1909, Molsheim, Alsace (France region under German Control WWI)</span></p>
+                        <p>Headquarters: <span>France</span></p>
+                        <p>Parent Company: <span>Volkswagen</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Buick" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/buick-logo.png" alt="Buick logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>BUICK</h3>
+                        <p>Founded: <span>1903, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>General Motors</span></p>
+                    </div>
+                </article>
             </div>
         </div>
 
         <div id="section-c" class="brand-section">
             <h2>C</h2>
             <div class="brand-grid">
-
+                <article class="brand-card" data-brand="Cadillac" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/cadillac-logo.png" alt="Cadillac logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CADILLAC</h3>
+                        <p>Founded: <span>1902, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>General Motors</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Chevrolet" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/chevrolet-logo.png" alt="Chevrolet logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CHEVROLET</h3>
+                        <p>Founded: <span>1911, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>General Motors</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Chrysler" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/chrysler-logo.png" alt="Chrysler logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CHRYSLER</h3>
+                        <p>Founded: <span>1925, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>FCA</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Citroen" data-country="France">
+                    <div class="brand-logo">
+                        <img src="images/citroen-logo.png" alt="Citroen logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CITROEN</h3>
+                        <p>Founded: <span>1919, Paris, France</span></p>
+                        <p>Headquarters: <span>France</span></p>
+                        <p>Parent Company: <span>Peugeot</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Cupra" data-country="Spain">
+                    <div class="brand-logo">
+                        <img src="images/cupra-logo.png" alt="Cupra logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>CUPRA</h3>
+                        <p>Founded: <span>2018, Barcelona, Spain</span></p>
+                        <p>Headquarters: <span>Spain</span></p>
+                        <p>Parent Company: <span>Seat</span></p>
+                    </div>
+                </article>
             </div>
         </div>
 
         <div id="section-d" class="brand-section">
             <h2>D</h2>
+            <div class="brand-grid">
+                <article class="brand-card" data-brand="Delorean" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/delorean-logo.png" alt="Delorean logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>DELOREAN</h3>
+                        <p>Founded: <span>1975, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Dodge" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/dodge-logo.png" alt="Dodge logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>DODGE</h3>
+                        <p>Founded: <span>1914, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>Chrysler</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-e" class="brand-section">
+            <h2>E</h2>
             <div class="brand-grid">
 
             </div>
@@ -106,18 +246,346 @@
         <div id="section-f" class="brand-section">
             <h2>F</h2>
             <div class="brand-grid">
-
+                <article class="brand-card" data-brand="Ferrari" data-country="Italy">
+                    <div class="brand-logo">
+                        <img src="images/ferrari-logo.png" alt="Ferrari logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>FERRARI</h3>
+                        <p>Founded: <span>1929, Modena, Italy</span></p>
+                        <p>Headquarters: <span>Italy</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Fiat" data-country="Italy">
+                    <div class="brand-logo">
+                        <img src="images/fiat-logo.png" alt="Fiat logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>FIAT</h3>
+                        <p>Founded: <span>1899, Turin, Italy</span></p>
+                        <p>Headquarters: <span>Italy</span></p>
+                        <p>Parent Company: <span>FCA</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Ford" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/ford-logo.png" alt="Ford logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>FORD</h3>
+                        <p>Founded: <span>1903, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
             </div>
         </div>
 
         <div id="section-g" class="brand-section">
             <h2>G</h2>
             <div class="brand-grid">
+                <article class="brand-card" data-brand="Genesis" data-country="South Korea">
+                    <div class="brand-logo">
+                        <img src="images/genesis-logo.png" alt="Genesis logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>GENESIS</h3>
+                        <p>Founded: <span>2015, Seoul, South Korea</span></p>
+                        <p>Headquarters: <span>South Korea</span></p>
+                        <p>Parent Company: <span>Hyundai</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="GMC" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/gmc-logo.png" alt="GMC logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>GMC</h3>
+                        <p>Founded: <span>1911, Detroit, Michigan</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>General Motors</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Gordon Murray" data-country="UK">
+                    <div class="brand-logo">
+                        <img src="images/gordon-murray-logo.png" alt="Gordon Murray logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>GORDON MURRAY</h3>
+                        <p>Founded: <span>2020, Windlesham, Surrey, England</span></p>
+                        <p>Headquarters: <span>UK</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-h" class="brand-section">
+            <h2>H</h2>
+            <div class="brand-grid">
+                <article class="brand-card" data-brand="Hennessey" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/hennessey-logo.png" alt="Hennessey logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>HENNESSEY</h3>
+                        <p>Founded: <span>1991, Texas, USA</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Holden" data-country="Australia">
+                    <div class="brand-logo">
+                        <img src="images/holden-logo.png" alt="Holden logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>HOLDEN</h3>
+                        <p>Founded: <span>1856, Adelaide, Australia</span></p>
+                        <p>Headquarters: <span>Australia</span></p>
+                        <p>Parent Company: <span>General Motors</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Honda" data-country="Japan">
+                    <div class="brand-logo">
+                        <img src="images/honda-logo.png" alt="Honda logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>HONDA</h3>
+                        <p>Founded: <span>1948, Hamamatsu, Japan</span></p>
+                        <p>Headquarters: <span>Japan</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Hyundai" data-country="South Korea">
+                    <div class="brand-logo">
+                        <img src="images/hyundai-logo.png" alt="Hyundai logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>HYUNDAI</h3>
+                        <p>Founded: <span>1967, Seoul, South Korea</span></p>
+                        <p>Headquarters: <span>South Korea</span></p>
+                        <p>Parent Company: <span>Hyundai Motor Group</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-i" class="brand-section">
+            <h2>I</h2>
+            <div class="brand-grid">
+                <article class="brand-card" data-brand="Infiniti" data-country="Japan">
+                    <div class="brand-logo">
+                        <img src="images/infiniti-logo.png" alt="Infiniti logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>INFINITI</h3>
+                        <p>Founded: <span>1989, Tokyo, Japan</span></p>
+                        <p>Headquarters: <span>Japan</span></p>
+                        <p>Parent Company: <span>Nissan</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-j" class="brand-section">
+            <h2>J</h2>
+            <div class="brand-grid">
+                <article class="brand-card" data-brand="Jaguar" data-country="UK">
+                    <div class="brand-logo">
+                        <img src="images/jaguar-logo.png" alt="Jaguar logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>JAGUAR</h3>
+                        <p>Founded: <span>1922, Blackpool, England</span></p>
+                        <p>Headquarters: <span>UK</span></p>
+                        <p>Parent Company: <span>Jaguar Land Rover</span></p>
+                    </div>
+                </article>
+                <article class="brand-card" data-brand="Jeep" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/jeep-logo.png" alt="Jeep logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>JEEP</h3>
+                        <p>Founded: <span>1943, Butler, Pennsylvania, USA</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>Chrysler</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-k" class="brand-section">
+            <h2>K</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-l" class="brand-section">
+            <h2>L</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-m" class="brand-section">
+            <h2>M</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-n" class="brand-section">
+            <h2>N</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-o" class="brand-section">
+            <h2>O</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-p" class="brand-section">
+            <h2>P</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-q" class="brand-section">
+            <h2>Q</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-r" class="brand-section">
+            <h2>R</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-s" class="brand-section">
+            <h2>S</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-t" class="brand-section">
+            <h2>T</h2>
+            <div class="brand-grid">
+                <article class="brand-card" data-brand="Tesla" data-country="USA">
+                    <div class="brand-logo">
+                        <img src="images/tesla-logo.png" alt="Tesla logo">
+                    </div>
+                    <div class="brand-info">
+                        <h3>T****</h3>
+                        <p>Founded: <span>2003, San Carlos, California</span></p>
+                        <p>Headquarters: <span>USA</span></p>
+                        <p>Parent Company: <span>-</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="section-u" class="brand-section">
+            <h2>U</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-v" class="brand-section">
+            <h2>V</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-w" class="brand-section">
+            <h2>W</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-x" class="brand-section">
+            <h2>X</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-y" class="brand-section">
+            <h2>Y</h2>
+            <div class="brand-grid">
+
+            </div>
+        </div>
+
+        <div id="section-z" class="brand-section">
+            <h2>Z</h2>
+            <div class="brand-grid">
 
             </div>
         </div>
     </section>
 </main>
+<script>
+    const countrySelect = document.getElementById("country-filter");
+    const brandCards = Array.from(document.querySelectorAll(".brand-card"));
+    const brandSections = Array.from(document.querySelectorAll(".brand-section"));
+
+    const getCountries = (card) =>
+        (card.dataset.country || "")
+            .split(",")
+            .map((country) => country.trim())
+            .filter(Boolean);
+
+    const populateCountries = () => {
+        const countries = new Set();
+        brandCards.forEach((card) => {
+            getCountries(card).forEach((country) => countries.add(country));
+        });
+
+        Array.from(countries)
+            .sort()
+            .forEach((country) => {
+                const option = document.createElement("option");
+                option.value = country;
+                option.textContent = country;
+                countrySelect.appendChild(option);
+            });
+    };
+
+    const applyFilter = () => {
+        const selected = countrySelect.value;
+
+        brandCards.forEach((card) => {
+            const matches = selected === "all" || getCountries(card).includes(selected);
+            card.style.display = matches ? "" : "none";
+        });
+
+        brandSections.forEach((section) => {
+            const visible = Array.from(section.querySelectorAll(".brand-card")).some(
+                (card) => card.style.display !== "none"
+            );
+            section.style.display = visible ? "" : "none";
+        });
+    };
+
+    populateCountries();
+    applyFilter();
+    countrySelect.addEventListener("change", applyFilter);
+</script>
 </body>
 </html>
 
