@@ -1,0 +1,10 @@
+{
+  "name": "carbrands",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Car manufacturers list page",
+  "scripts": {
+    "test": "powershell -ExecutionPolicy Bypass -File tools\\validate.ps1"
+  }
+}
+
