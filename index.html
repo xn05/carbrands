@@ -6,6 +6,7 @@
     <title>Car Manufacturers</title>
     <Link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <script src="main.js" defer></script>
 </head>
 <body>
 <main>
@@ -25,20 +26,21 @@
             <a href="#section-b">B</a>
             <a href="#section-c">C</a>
             <a href="#section-d">D</a>
+            <a href="#section-e">E</a>
             <a href="#section-f">F</a>
             <a href="#section-g">G</a>
-            <a href="#section-g">H</a>
-            <a href="#section-g">I</a>
-            <a href="#section-g">J</a>
-            <a href="#section-g">K</a>
-            <a href="#section-g">L</a>
-            <a href="#section-g">M</a>
-            <a href="#section-g">N</a>
-            <a href="#section-g">O</a>
-            <a href="#section-g">P</a>
-            <a href="#section-g">Q</a>
-            <a href="#section-g">R</a>
-            <a href="#section-g">S</a>
+            <a href="#section-h">H</a>
+            <a href="#section-i">I</a>
+            <a href="#section-j">J</a>
+            <a href="#section-k">K</a>
+            <a href="#section-l">L</a>
+            <a href="#section-m">M</a>
+            <a href="#section-n">N</a>
+            <a href="#section-o">O</a>
+            <a href="#section-p">P</a>
+            <a href="#section-q">Q</a>
+            <a href="#section-r">R</a>
+            <a href="#section-s">S</a>
             <a href="#section-t">T</a>
             <a href="#section-u">U</a>
             <a href="#section-v">V</a>
@@ -915,52 +917,5 @@
         </div>
     </section>
 </main>
-<script>
-    const countrySelect = document.getElementById("country-filter");
-    const brandCards = Array.from(document.querySelectorAll(".brand-card"));
-    const brandSections = Array.from(document.querySelectorAll(".brand-section"));
-
-    const getCountries = (card) =>
-        (card.dataset.country || "")
-            .split(",")
-            .map((country) => country.trim())
-            .filter(Boolean);
-
-    const populateCountries = () => {
-        const countries = new Set();
-        brandCards.forEach((card) => {
-            getCountries(card).forEach((country) => countries.add(country));
-        });
-
-        Array.from(countries)
-            .sort()
-            .forEach((country) => {
-                const option = document.createElement("option");
-                option.value = country;
-                option.textContent = country;
-                countrySelect.appendChild(option);
-            });
-    };
-
-    const applyFilter = () => {
-        const selected = countrySelect.value;
-
-        brandCards.forEach((card) => {
-            const matches = selected === "all" || getCountries(card).includes(selected);
-            card.style.display = matches ? "" : "none";
-        });
-
-        brandSections.forEach((section) => {
-            const visible = Array.from(section.querySelectorAll(".brand-card")).some(
-                (card) => card.style.display !== "none"
-            );
-            section.style.display = visible ? "" : "none";
-        });
-    };
-
-    populateCountries();
-    applyFilter();
-    countrySelect.addEventListener("change", applyFilter);
-</script>
 </body>
 </html>
