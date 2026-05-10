@@ -10,17 +10,20 @@ const getCountries = (card) =>
         .filter(Boolean);
 
 const populateCountries = () => {
-    const countries = new Set();
+    const countryCounts = new Map();
+
     brandCards.forEach((card) => {
-        getCountries(card).forEach((country) => countries.add(country));
+        getCountries(card).forEach((country) => {
+            countryCounts.set(country, (countryCounts.get(country) || 0) + 1);
+        });
     });
 
-    Array.from(countries)
+    Array.from(countryCounts.keys())
         .sort()
         .forEach((country) => {
             const option = document.createElement("option");
             option.value = country;
-            option.textContent = country;
+            option.textContent = `${country} (${countryCounts.get(country)})`;
             countrySelect.appendChild(option);
         });
 };
@@ -65,4 +68,3 @@ const applyFilter = () => {
 populateCountries();
 applyFilter();
 countrySelect.addEventListener("change", applyFilter);
-
